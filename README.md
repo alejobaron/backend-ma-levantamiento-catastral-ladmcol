@@ -10,15 +10,15 @@ El backend de la plataforma se construye con Django REST Framework (DRF) y exten
 
 El proyecto está organizado en aplicaciones creadas mediante sentencias de codigo de DRF, cada una representa diferentes componentes temáticos del modelo de aplicación del levantamiento catastral LADM-COL, trabajando unicamente los paquetes adiministrativos, interesados, unidad espacial y el componente de soporte documental
 
-| Aplicación               | Descripción                                                                					  |
-|--------------------------|--------------------------------------------------------------------------------------------------|
-| 'dominios'               | Contiene entidades de dominio y catálogos de clasificación.                					  |
-| 'estructuras'            | Define estructuras adicionales y asociativas de algunas entidades del modelo.                    |
-| 'paquete_administrativo' | Modela la información administrativa (derechos, restricciones, etc.).      					  |
-| 'paquete_interesados'    | Representa personas naturales o jurídicas involucradas.                    					  |
-| 'paquete_unidad_espacial'| Contiene las unidades espaciales como predios o parcelas.                  					  |
-| 'soporte_documental'     | Administra documentos que respaldan la información catastral.              					  |
-| 'users'                  | Gestión de usuarios y autenticación.                                       					  |
+| Aplicación               | Descripción                                                                					                       |
+|--------------------------|--------------------------------------------------------------------------------------------------------|
+| 'dominios'               | Contiene entidades de dominio y catálogos de clasificación.                					                       |
+| 'estructuras'            | Define estructuras adicionales y asociativas de algunas entidades del modelo.                          |
+| 'paquete_administrativo' | Modela la información administrativa ( unidad administrativa básica, derechos, restricciones, etc.).   |
+| 'paquete_interesados'    | Representa personas naturales o jurídicas involucradas.                    					                       |
+| 'paquete_unidad_espacial'| Contiene las unidades espaciales como terreno, construcciones o unidades de construccion.       					  |
+| 'soporte_documental'     | Administra documentos que respaldan la información catastral.              					                       |
+| 'users'                  | Gestión de usuarios y autenticación.                                       					                       |
 
 ---
 
