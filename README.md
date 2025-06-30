@@ -6,7 +6,7 @@ El backend de la plataforma se construye con Django REST Framework y extensiones
 
 ---
 
-##Estructura del Proyecto
+## Estructura del Proyecto
 
 El proyecto está organizado en aplicaciones creadas mediante sentencias de codigo de DRF, cada una representa diferentes componentes temáticos del modelo de aplicación del levantamiento catastral LADM-COL, trabanjando unicamente los paquetes adiministrativos, interesados, unidad espacial y el componente de soporte documental
 
@@ -26,16 +26,16 @@ El proyecto está organizado en aplicaciones creadas mediante sentencias de codi
 
 Cada aplicación cuenta con la siguiente estructura interna:
 
-nombre_aplicacion/
-│
-├── models.py # Definición de entidades del modelo LADM-COL
-├── admin.py # Registro de modelos en el panel de administración
-├── apps.py # Configuración de la app
-│
-└── api/
-├── serializers.py # Serialización de modelos (ModelSerializer)
-├── views.py # Vistas basadas en ViewSets (ModelViewSet)
-└── routers.py # Registro de rutas por modelo (router.register)
+<pre> nombre_aplicacion/ 
+ │
+ ├── models.py # Definición de entidades del modelo LADM-COL 
+ ├── admin.py # Registro de modelos en el panel de administración 
+ ├── apps.py # Configuración de la app 
+ │ 
+ └── api/ 
+ ├── serializers.py # Serialización de modelos (ModelSerializer) 
+ ├── views.py # Vistas basadas en ViewSets (ModelViewSet) 
+ └── routers.py # Registro de rutas por modelo (router.register) </pre>
 
 ---
 
@@ -72,7 +72,7 @@ pip install -r requirements.txt
  
 - Configurar la base de datos (PostgreSQL)
 Editar el archivo settings.py con las credenciales PostgreSQL:
-DATABASES = {
+<pre> DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'nombre_bd',
@@ -81,20 +81,23 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     }
-}
+} </pre>
 
 - Migraciones y superusuario
+```bash
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
+```
 
 - Ejecutar el servidor
+```bash
 python manage.py runserver
+```
 
-
---Una vez el servidor esté en funcionamiento, puedes acceder a los endpoints en:
+- Una vez el servidor esté en funcionamiento, puedes acceder a los endpoints en:
 http://localhost:8000/api/
 
-Y la interfaz de administración de Django en:
+- En la interfaz de administración de Django en:
 http://localhost:8000/admin/
 
