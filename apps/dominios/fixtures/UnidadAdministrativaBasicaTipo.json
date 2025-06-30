@@ -1,0 +1,13 @@
+[
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 1, "fields": { "tipo": "Predio" } },
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 2, "fields": { "tipo": "Ordenamiento_Territorial" } },
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 3, "fields": { "tipo": "Servicios_Publicos" } },
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 4, "fields": { "tipo": "Reservas_Naturales" } },
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 5, "fields": { "tipo": "Parques_Naturales" } },
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 6, "fields": { "tipo": "Amenazas_Riesgos" } },
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 7, "fields": { "tipo": "Servidumbre" } },
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 8, "fields": { "tipo": "Superficies_Agua" } },
+  { "model": "dominios.col_unidadadministrativabasicatipo", "pk": 9, "fields": { "tipo": "Transporte" } }
+]
+
+
