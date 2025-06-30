@@ -1,6 +1,3 @@
-# alejobaron-backend-ma-levantamiento-catastral-ladmcol
-Plataforma Digital para la Gestión Catastral en Colombia. : Implementación del modelo de aplicación de levantamiento catastral LADM COL. El backend de la plataforma se construye con Django REST Framework y extensiones geoespaciales mediante GeoDjango y PostGIS.
-=======
 # Plataforma Digital para la Gestión Catastral en Colombia: Implementación del modelo de aplicación de levantamiento catastral LADM COL
 
 Este proyecto tiene como finalidad presentar el desarrollo e implementación de una plataforma digital orientada a la gestión catastral en Colombia, tomando como base normativa y técnica el Modelo de Aplicación de Levantamiento Catastral LADM-COL en su versión 2.0.
