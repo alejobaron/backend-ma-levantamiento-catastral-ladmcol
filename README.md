@@ -2,13 +2,13 @@
 
 Este proyecto tiene como finalidad presentar el desarrollo e implementación de una plataforma digital orientada a la gestión catastral en Colombia, tomando como base normativa y técnica el Modelo de Aplicación de Levantamiento Catastral LADM-COL en su versión 2.0.
 
-El backend de la plataforma se construye con Django REST Framework y extensiones geoespaciales mediante GeoDjango y PostGIS, permitiendo exponer servicios web robustos y seguros y donde se explica su estructura en este archivoc.
+El backend de la plataforma se construye con Django REST Framework (DRF) y extensiones geoespaciales mediante GeoDjango y PostGIS, permitiendo exponer servicios web robustos y seguros y donde se explica su estructura en este archivoc.
 
 ---
 
 ## Estructura del Proyecto
 
-El proyecto está organizado en aplicaciones creadas mediante sentencias de codigo de DRF, cada una representa diferentes componentes temáticos del modelo de aplicación del levantamiento catastral LADM-COL, trabanjando unicamente los paquetes adiministrativos, interesados, unidad espacial y el componente de soporte documental
+El proyecto está organizado en aplicaciones creadas mediante sentencias de codigo de DRF, cada una representa diferentes componentes temáticos del modelo de aplicación del levantamiento catastral LADM-COL, trabajando unicamente los paquetes adiministrativos, interesados, unidad espacial y el componente de soporte documental
 
 | Aplicación               | Descripción                                                                					  |
 |--------------------------|--------------------------------------------------------------------------------------------------|
@@ -42,10 +42,10 @@ Cada aplicación cuenta con la siguiente estructura interna:
 ## Configuración del Proyecto
 
 El proyecto principal que lleva de nombre 'MA_LEVANTAMIENTO_CATASTRAL' contiene:
-
-- 'settings.py': Configuración general de Django, DRF, CORS, BD, etc.
-- 'urls.py': Enrutamiento global de APIs.
-- Integración con PostgreSQL.
+<pre>
+settings.py # Configuración general de Django, DRF, CORS, BD, etc.
+urls.py # Enrutamiento global de APIs.
+Integración con PostgreSQL.</pre>
 
 ---
 
@@ -64,9 +64,11 @@ El proyecto principal que lleva de nombre 'MA_LEVANTAMIENTO_CATASTRAL' contiene:
 - Clonar el repositorio
 
 - Crear entorno virtual e instalar dependencias
+```bash
 python -m venv env
 source bin/activate
 pip install -r requirements.txt
+```
 
 - Creación de base de datos en PostgreSQL con extension PostGIS  configuración del sistema de referencia MAGNA-SIRGAS Origen Nacional
  
