@@ -97,6 +97,8 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
+Proyecto desarrollado por Alejandro Barón candidato a Master en Ingeniería Geomática y Geoinformación
+
 - Una vez el servidor esté en funcionamiento, puedes acceder a los endpoints en:
 http://localhost:8000/api/
 
